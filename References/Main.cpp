@@ -19,12 +19,20 @@ int main()
     ref = 2;
 
     LOG(ref);
-
+//////////////////////////////////
     Increment(ref);
     LOG(ref);
-    
+/////////////////////////////////////////////////////////
     IncrementPointer(&ref);
     LOG(ref);
+
+    int b = 7;
+    int c = 8;
+    int& refe = b;
+    refe = c;
+
+    LOG(b);
+    LOG(c);
 
     std::cin.get();
 }
